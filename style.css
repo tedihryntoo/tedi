@@ -1,0 +1,149 @@
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0b1220;
+  --panel: #111c2e;
+  --line: #26364f;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --blue: #2563eb;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: min(900px, calc(100% - 32px));
+  margin: 38px auto;
+}
+
+.top {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+.brand-mark {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: #1d4ed8;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+.eyebrow {
+  color: #60a5fa;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.7px;
+}
+
+.muted,
+.hint {
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 22px;
+  margin-bottom: 17px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 170px;
+}
+
+.pill {
+  display: inline-block;
+  color: #93c5fd;
+  background: #172f55;
+  border-radius: 30px;
+  padding: 6px 10px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.device-icon {
+  font-size: 70px;
+  color: #60a5fa;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  margin: 18px 0 8px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  background: #0b1220;
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.primary {
+  color: white;
+  background: var(--blue);
+}
+
+.primary:hover {
+  background: #1d4ed8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+@media (max-width: 650px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    margin: 22px auto;
+  }
+}
