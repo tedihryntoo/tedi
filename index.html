@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <title>ESP32 WiFi Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="top">
+      <div class="brand-mark">ESP</div>
+      <div>
+        <p class="eyebrow">DEVICE CONTROL CENTER</p>
+        <h1>ESP32 WiFi Manager</h1>
+        <p class="muted">Hybrid GitHub Pages + konfigurasi lokal</p>
+      </div>
+    </header>
+
+    <section class="card hero">
+      <div>
+        <span class="pill">HYBRID MODE</span>
+        <h2>Kelola koneksi perangkat</h2>
+        <p class="muted">Dashboard utama untuk mengakses konfigurasi ESP32.</p>
+      </div>
+      <div class="device-icon">⌁</div>
+    </section>
+
+    <section class="card">
+      <p class="eyebrow">LOCAL DEVICE</p>
+      <h2>Buka panel ESP32</h2>
+
+      <label for="deviceAddress">Alamat perangkat</label>
+      <input id="deviceAddress" value="http://192.168.4.1">
+
+      <button id="openPanel" class="primary">
+        Buka konfigurasi ESP32 ↗
+      </button>
+
+      <p class="hint">
+        Mode AP: http://192.168.4.1.
+        Mode router: masukkan IP ESP32 dari router.
+      </p>
+      <p id="message"></p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h3>WiFi Scanner</h3>
+        <p class="muted">Cari jaringan WiFi sekitar.</p>
+      </article>
+      <article class="card">
+        <h3>Simpan Konfigurasi</h3>
+        <p class="muted">SSID dan password disimpan di ESP32.</p>
+      </article>
+      <article class="card">
+        <h3>Mode AP Cadangan</h3>
+        <p class="muted">Panel lokal tetap tersedia.</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
